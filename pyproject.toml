@@ -1,0 +1,9 @@
+[project]
+name = "persian5k"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "brain-brew>=0.3.11",
+]

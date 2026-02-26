@@ -1,0 +1,27 @@
+- build_parts:
+  - headers_from_crowd_anki:
+      part_id: deck_headers
+      source: build/Persian5k
+  - notes_from_crowd_anki:
+      part_id: deck_notes
+      source: build/Persian5k
+  - note_models_all_from_crowd_anki:
+      source: build/Persian5k
+  - media_group_from_crowd_anki:
+      part_id: deck_media
+      source: build/Persian5k
+      recursive: true
+- save_media_groups_to_folder:
+    parts:
+    - deck_media
+    folder: src/media/
+    clear_folder: true
+    recursive: true
+- generate_csvs:
+    notes: deck_notes
+    file_mappings:
+    - file: src/data/Persian5k.csv
+      note_model: Persian5k
+    note_model_mappings:
+    - note_models:
+      - Persian5k

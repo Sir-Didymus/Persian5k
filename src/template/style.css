@@ -1,0 +1,173 @@
+/* ---------- GENERAL SETTINGS ---------- */
+:root {
+  --max-width: 600px;
+  --line-height: 1.5;
+  --font-size-large: 34px;
+  --font-size-regular: 28px;
+  --font-size-medium: 18px;
+  --font-size-small: 14px;
+  --font-size-tiny: 10px;
+}
+
+/* ---------- FONTS ---------- */
+:root {
+  --font-family-serif: "Noto Serif", Georgia, serif, "noto_serif_bundled";
+  --font-family-sans: "Noto Sans", Arial, sans-serif, "noto_sans_bundled";
+  --font-family-arabic:
+    "Noto Sans Arabic", "noto_sans_arabic_bundled", Roboto, sans-serif;
+}
+
+/* ---------- CUSTOM FONTS ---------- */
+
+@font-face {
+  /* FONT FAMILY SERIF */
+  font-family: "noto_serif_bundled";
+  src: url("_noto_serif.ttf");
+}
+
+@font-face {
+  /* FONT FAMILY SANS */
+  font-family: "noto_sans_bundled";
+  src: url("_noto_sans.ttf");
+}
+
+@font-face {
+  font-family: "noto_sans_arabic_bundled";
+  src: url("_noto_sans_arabic.ttf");
+}
+
+/* ---------- COLORS ---------- */
+
+.card {
+  /* LIGHT MODE */
+  --bg-color-primary: ##eff1f5;
+  --bg-color-secondary: #ccd0da;
+  --divider-bg-color: #7c7f93;
+  --text-color: #4c4f69;
+  --text-color-subtle: #8c8fa1;
+  --subtext-color: #5c5f77;
+  --selected-text-bg-color: #7c7f93;
+  --italic-color: #7287fd;
+  --type-missed-color: #9ca0b0;
+  --target-word-color: #229a3e;
+  background-color: var(--bg-color-primary);
+}
+
+.card.nightMode {
+  /* DARK MODE */
+  --bg-color-primary: #1e1e2e;
+  --bg-color-secondary: #313244;
+  --divider-bg-color: #9399b2;
+  --text-color: #cdd6f4;
+  --text-color-subtle: #7f849c;
+  --subtext-color: #bac2de;
+  --selected-text-bg-color: #9399b2;
+  --italic-color: #b4befe;
+  --type-missed-color: #6c7086;
+  --target-word-color: #a6e3a1;
+  background-color: var(--bg-color-primary);
+}
+
+/* ---------- CARD SETTINGS ---------- */
+.card {
+  margin: clamp(20px, 8vh, 40px) auto;
+  padding: 0 20px;
+  text-align: left;
+  max-width: var(--max-width);
+  background-color: var(--bg-color-primary);
+  color: var(--text-color);
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height);
+}
+
+/* ---------- DIVIDER ---------- */
+hr {
+  all: unset;
+  display: block;
+  margin: clamp(0.5em, 4vh, 1em) 0;
+  height: 1.5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed var(--divider-bg-color);
+}
+
+/* ---------- TEXT SELECTION ---------- */
+::selection {
+  background-color: var(--selected-text-bg-color);
+  color: var(--text-color);
+}
+
+/* ---------- REPLAY BUTTON ---------- */
+
+.replay-button svg circle {
+  fill: transparent;
+  stroke: transparent;
+}
+
+.replay-button svg path {
+  fill: var(--text-color-subtle);
+}
+
+/* ---------- HEAD ---------- */
+.persian5k-head {
+  text-align: center;
+}
+
+/* ---------- BODY ---------- */
+.persian5k-body {
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.persian5k-part-of-speech {
+  font-size: var(--font-size-small);
+  color: var(--text-color-subtle);
+}
+
+.persian5k-word {
+  font-size: var(--font-size-large);
+  font-family: var(--font--family-arabic);
+  color: var(--target-word-color);
+}
+
+.persian5k-word i {
+  color: var(--text-color-subtle);
+  font-style: normal;
+}
+
+.persian5k-definition {
+  font-size: var(--font-size-medium);
+}
+
+.persian5k-romanization {
+  font-size: var(--font-size-small);
+  color: var(--text-color-subtle);
+}
+
+.persian5k-sentence {
+  font-size: var(--font-size-regular);
+  font-family: var(--font--family-arabic);
+}
+
+.persian5k-color-target-word b,
+.persian5k-color-target-word strong {
+  color: var(--target-word-color);
+  font-weight: normal;
+}
+
+.persian5k-hide-target-word b,
+.persian5k-hide-target-word strong {
+  font-weight: normal;
+  color: transparent;
+  border-bottom: 1px dashed var(--divider-bg-color);
+  position: relative;
+  display: inline-block;
+}
+
+.persian5k-sentence-meaning {
+  font-size: var(--font-size-medium);
+}

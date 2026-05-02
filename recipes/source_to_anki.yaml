@@ -19,6 +19,24 @@
       note_model_mappings:
       - note_models:
         - Persian5k
+        columns_to_fields:
+          guid: guid
+          id: id
+          sort-index: sort-index
+          frequency-rank: frequency-rank
+          frequency: frequency
+          part-of-speech: part-of-speech
+          word: word
+          word-romanization: word-romanization
+          definition: definition
+          sentence: sentence
+          sentence-romanization: sentence-romanization
+          sentence-meaning: sentence-meaning
+          word-audio: word-audio
+          sentence-audio: sentence-audio
+          word-auido-source: word-auido-source
+          sentence-auido-source: sentence-auido-source
+          tags: tags
   - media_group_from_folder:
       part_id: deck_media
       source: src/media/

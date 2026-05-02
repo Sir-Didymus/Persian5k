@@ -1,11 +1,11 @@
 crowdanki_uuid: e2333bc0-11ad-11f1-91f5-d95aad0199a3
-deck_config_uuid: e2337a18-11ad-11f1-91f5-d95aad0199a3
+deck_config_uuid: aae928e4-1312-11f1-90bc-0bb708e0cc52
 deck_configurations:
 - __type__: DeckConfig
   answerAction: 0
   autoplay: true
   buryInterdayLearning: false
-  crowdanki_uuid: e2337a18-11ad-11f1-91f5-d95aad0199a3
+  crowdanki_uuid: aae928e4-1312-11f1-90bc-0bb708e0cc52
   desiredRetention: 0.9
   dyn: false
   easyDaysPercentages:
@@ -63,7 +63,7 @@ deck_configurations:
     minInt: 1
     mult: 0.0
   maxTaken: 60
-  name: Default
+  name: Persian5k
   new:
     bury: true
     delays:
